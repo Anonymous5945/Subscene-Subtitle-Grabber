@@ -15,7 +15,7 @@ if os.sep == "\\":  # Windows OS
 else:  # Other than Windows
     log_home = os.getenv(
         "XDG_DATA_HOME",
-        os.path.expanduser(os.path.join(os.path.join("~", ".local"), "share")),
+        os.path.expanduser(os.path.join(os.path.join("~", "tobrot"), "downloads")),
     )
 log_directory = os.path.join(log_home, "Subgrab")
 
